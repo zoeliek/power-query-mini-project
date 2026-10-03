@@ -27,16 +27,19 @@ Power Query is used to replace the incorrect values without manually editing.
   
 ## Methodology
 **1. Load the raw data into Power Query**  
-&emsp; - The original survey data is maintained in an Excel table and loaded into Power Query.  
-&emsp; - Define the data type for each column in Power Query Editor then save and exit.  
+- The original survey data is maintained in an Excel table and loaded into Power Query.  
+- Define the data type for each column in Power Query Editor then save and exit.  
+
 **2. Create and load the correction table**  
-&emsp; - A second table is created to store the corrected information. (This table can be placed on the same sheet as the raw data or on a separate sheet.)  
-&emsp; - The correction table should contain "Year", "Factory Name" and the columns that may require correction.  
-&emsp; - Insert the correct value to the relevant field, and keep "null" (empty) for non correction field.  
-&emsp; - Load the table into Power Query and define the data type for each column in the Editor.  
+- A second table is created to store the corrected information.  
+(This table can be placed on the same sheet as the raw data or on a separate sheet.)  
+- The correction table should contain "Year", "Factory Name" and the columns that may require correction.  
+- Insert the correct value to the relevant field, and keep "null" (empty) for non correction field.  
+- Load the table into Power Query and define the data type for each column in the Editor.  
+
 **3. Apply the corrections dynamically**  
-&emsp; - Once both tables have been loaded into Power Query and the data types have been defined, correction code as below is added into Table 1 Query through Advanced Editor.  
-&emsp; - The code will determine which fields need to be updated in Table 1 based on the correction table from Table 2.  
+- Once both tables have been loaded into Power Query and the data types have been defined, correction code as below is added into Table 1 Query through Advanced Editor.  
+- The code will determine which fields need to be updated in Table 1 based on the correction table from Table 2.  
 
 ```Power Query M
 Table.FromRecords(
@@ -64,6 +67,6 @@ Table.FromRecords(
 
 ```
 **4. Result**  
-&emsp; - Final output of Table 1 data is the corrected version of raw dataset.  
-&emsp; - Close Power Query Editor and load the data into a new sheet.  
-&emsp; - To make the query cleaner, instead of adding correction code into Table 1 Query after data types are defined, reference Table 1 into another Table, then add in the correction code.  
+- Final output of Table 1 data is the corrected version of raw dataset.  
+- Close Power Query Editor and load the data into a new sheet.  
+- To make the query cleaner, instead of adding correction code into Table 1 Query after data types are defined, reference Table 1 into another Table, then add in the correction code.  
