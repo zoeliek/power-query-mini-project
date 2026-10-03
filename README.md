@@ -1,2 +1,2 @@
-# power-query-mini-project
-🙌 Tools to make life easier in Power Query
+# Power Query Mini Projects
+A collection of small projects I created to make life easier using Power Query!
