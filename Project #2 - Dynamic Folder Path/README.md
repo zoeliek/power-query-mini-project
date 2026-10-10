@@ -9,7 +9,7 @@ When a SharePoint folder name or site structure changes, hardcoded file paths in
 **Step 1:** Create a table in one of the sheets in Excel. The table will a store the target SharePoint folder path.  
 - Set up a two-column table in Excel with headers "Parameter" and "File Path".
 - Enter TargetFolder under the Parameter column and SharePoint folder path under the File Path column.
-- Go to Table Design tab, and rename the table to FolderPath.
+- Go to Table Design tab, and rename the table to FPath.
 
 | Parameter | File Path |
 | -------- | -------- |
@@ -17,13 +17,13 @@ When a SharePoint folder name or site structure changes, hardcoded file paths in
 
 <br>
 
-**Step 2:**  Import FolderPath table into Power Query to create a parameter query.  
+**Step 2:**  Import FPath table into Power Query to create a parameter query.  
 - Open the Advanced Editor and replace the generated code with the following M code, then save and exit.
 - This query now acts as a dynamic parameter containing the SharePoint path.
 
 ```Power Query M
 let
-    Source = Excel.CurrentWorkbook(){[Name="FolderPath"]}[Content],
+    Source = Excel.CurrentWorkbook(){[Name="FPath"]}[Content],
     TargetFolder = Source{0}[Value]
 in
     TargetFolder
@@ -31,10 +31,10 @@ in
 
 <br>
 
-**Step 3:** Exit Power Query Editor, then Get Data from SharePoint Folder as usual.
--	Open the Advanced Editor and replace the generated code of the SharePoint path with the following M code.
+**Step 3:** Exit Power Query Editor, then Get Data from SharePoint folder as usual.
+-	Open the Advanced Editor and replace the generated code of the SharePoint folder path with the following M code.
 -	Then save it and continue to locate the required file from the SharePoint folder. Close the Power Query Editor and continue.
--	The folder path can be changed or updated in "FolderPath" table each time without opening the Power Query Editor.
+-	The folder path can be changed or updated in "FPath" table each time without opening the Power Query Editor.
 
 
 ```Power Query M
