@@ -35,6 +35,9 @@ in
 
 **Step 3:** Connect to SharePoint folder as usual via Get Data from SharePoint Folder.
 -	Open the Advanced Editor and replace the generated code of the SharePoint path with the following M code.
+-	Then save it and continue to locate the required file from SharePoint Folder.
+-	The folder path can be changed or updated in "FolderPath" table each time without opening the Power Query Editor.
+
 
 ```Power Query M
 let
