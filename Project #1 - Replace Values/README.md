@@ -5,7 +5,7 @@ Raw survey responses (e.g. utility data from factories) collected from the users
 After the survey closed, a correction table is maintained in the same Excel workbook to store the correct values shared by the users. 
 Power Query is used to replace the incorrect values without manually editing.
 
-## Data Structure  
+## Data Structures  
 **Table 1 (Raw survey data)**: The original dataset collected from users.  
 <img width="992" height="230" alt="image" src="https://github.com/user-attachments/assets/c2040416-a3f1-4c10-a139-66f4e6421f68" />  
 
@@ -25,7 +25,7 @@ Power Query is used to replace the incorrect values without manually editing.
 - **Selective correction updates for targeted errors** — Year and Factory Name are used as matching keys to ensure corrections are applied data errors.
 - **Dynamic transformation** — The M code identifies require correction without hard-coding every possible correction column.
   
-## Methodology
+## Solutions  
 **1. Load the raw data into Power Query**  
 - The original survey data is maintained in an Excel table and loaded into Power Query.  
 - Define the data type for each column in Power Query Editor then save and exit.  
