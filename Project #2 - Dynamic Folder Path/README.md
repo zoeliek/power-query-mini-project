@@ -1,9 +1,9 @@
 ## 📑 Project 2: Getting data from SharePoint Folder via Excel Parameters in Power Query
 
-Externalise the SharePoint folder path in an Excel table as a dynamic parameter, allowing users to update the data sources easily without editing the M code in Power Query Advanced Editor.
+Externalise the SharePoint folder path in an Excel table as a dynamic parameter, allowing users to update the data source easily without editing the M code in Power Query Advanced Editor.
 
 ## Problem Statement  
-When a SharePoint folder name or site structure changes, hardcoded file paths in Power Query break, it requiring manual updates inside the Advanced Editor. This approach is prone to errors when maintaining shared reports.  
+When a SharePoint folder name or site structure changes, hardcoded file paths in Power Query break, it requires manual updates inside the Advanced Editor. This approach is prone to errors when maintaining shared reports.  
 
 ## Solutions & Data Structure  
 **Step 1:** Create a table in one of the sheets in Excel. The table will a store the target SharePoint folder path.  
