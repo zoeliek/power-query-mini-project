@@ -6,7 +6,7 @@ A automated ETL (Extract, Transform, Load) pipeline built in Power Query to clea
 Data collected across various manufacturing plants contained mixed measurement units (e.g., energy in kWh  vs. MJ , mass in lbs  vs. kg , or water in m3, gal , CCF , and L ).  
 
 ## Benefits  
-This automated data transformation in Power Query using dynamic master reference table with M code lookups to replace Excel formulas.  
+This automated data transformation in Power Query using master reference table with M code lookups to replace Excel formulas.  
 Key benefits:  
 - Works across any domain requiring unit conversions, including ESG/Sustainability metrics (water, energy, carbon), supply chain logistics (weights, volumes), and financial analytics.
 - New or conversion units can be added directly to the reference table without modifying the core Power Query M code.
