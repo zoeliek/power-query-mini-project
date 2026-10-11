@@ -40,7 +40,7 @@ in
 ```Power Query M
 let
   TargetFolder = FolderPath,
-  Source = SharePoint.Files("https://companyname.sharepoint.com/sites/itteam", [ApiVersion = 15]),
+  Source = SharePoint.Files("https://thesitename.sharepoint.com/sites/itteam", [ApiVersion = 15]),
   FilteredFiles = Table.SelectRows(Source, each Text.Contains([Folder Path], TargetFolder))
 in
   FilteredFiles
