@@ -5,7 +5,7 @@ Externalise the SharePoint folder path in an Excel table as a dynamic parameter,
 ## Problem Statement  
 When a SharePoint folder name or site structure changes, hardcoded file paths in Power Query break, it requires manual updates inside the Advanced Editor. This approach is prone to errors when maintaining shared reports.  
 
-## Solutions & Data Structure  
+## Solutions & Data Structures  
 **Step 1:** Create a table in one of the sheets in Excel. The table will a store the target SharePoint folder path.  
 - Set up a two-column table in Excel with headers "Parameter" and "File Path".
 - Enter TargetFolder under the Parameter column and SharePoint folder path under the File Path column.
