@@ -2,7 +2,7 @@
 
 ## Problem Statement
 Raw survey responses (e.g. utility data from factories) collected from the users are saved in Excel workbook but contain multiple data errors.
-After the survey closed, a correction table is maintained in the same Excel workbook to store the correct values shared by the users. 
+After the survey closed, a correction table is maintained in the same Excel workbook to store the correct values shared by the users in the later stage. 
 Power Query is used to replace the incorrect values without manually editing.
 
 ## Data Structures  
